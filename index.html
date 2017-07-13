@@ -53,7 +53,11 @@
                 <span class="comments">// 我知道渐渐地我已经变成了那个你不喜欢的那个人了。终于在2017年的7月我失去了你。</span><br />
                 <span class="keyword">boolean</span> isAccept = <span class="keyword">false</span>;<br />
                 i.destroy();<br />
-                <span class="comments">// 现在我明白了如何去爱你，怎么去给你真正的爱情。真正爱一个人需要给予对方所有的信任，不要在拥有对方的爱的时候还凭着自己的自私去要求对方。曾经的我自私，耍小孩子脾气，不成熟。现在的我每天都在改变着自己，去成为你心中想要我成为的那个人。</span><br />
+                <span class="comments">// 之前的我绝不是你说的那句“Merry me”可以配得上的人。但现在我明白了如何去爱你，怎么去给你真正的爱情。真正爱一个人需要给予对方所有的信任，不要在拥有对方的爱的时候还凭着自己的自私去要求对方。曾经的我自私，耍小孩子脾气，不成熟。现在的我每天都在改变着自己，去成为你心中想要我成为的那个人。</span><br />
+                believe = "我会给你男朋友应该给到的关心，而不是过分的占有欲。"<br />
+                caring = "即使不开心也要时刻注意到你的感受，把你的想法放在第一位。"<br />
+                others = "我会尽我一切的努力让你和你的身边的人看到我的改变，让你知道我是一个可以靠得住，有爱心的男朋友。"<br />
+                things = [believe, caring, others]<br />
                 i.set(things);<br />
                 <span class="keyword">while</span> (isAccept) {<br />
                 <span class="placeholder"/>i.waitFor(u);<br />
@@ -66,10 +70,13 @@
                 u.liveHappilyWith(i);<br />
                 <br />
                 <br />
-                <span class="comments">// 我明白生活不像程序这么简单，有了前置条件就能达到后置条件。生活上的事情不是讲道理，而是两个人共同去了解对方，共同去努力。请你相信，我给的爱，值得你爱。</span><br />
+                <span class="comments">// 我明白生活不像程序这么简单，有了前置条件就能达到后置条件。</span><br />
+                <span class="comments">// 生活上的事情不是讲道理，而是两个人共同去了解对方，共同去努力。</span><br />
+                <span class="comments">// 我知道我所说的改变只是很小的一部分，还有很多地方需要我去努力。</span><br />
+                <span class="comments">// 请你相信，我给的爱，值得你爱。</span><br />
             </div>
         </div>
-        <div id="content" class="row" style="margin-top:200px">
+        <div id="content" class="row" style="margin-top:500px">
             <div id="loveHeart" class="col s12">
                 <canvas id="garden"></canvas>
                 <div id="words">
@@ -120,6 +127,16 @@
             adjustCodePosition();
             $("#code").typewriter();
         }
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-81403004-2', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 </html>
