@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Our Love Story-Download by http://www.codefans.net</title>
+    <title>我和你的爱情故事</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <style type="text/css">
         @font-face {
@@ -13,30 +13,33 @@
     <script type="text/javascript" src="style/jquery.js"></script>
     <script type="text/javascript" src="style/garden.js"></script>
     <script type="text/javascript" src="style/functions.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 </head>
 
 <body>
-    <div id="mainDiv">
-        <div id="content">
-            <div id="code">
-                <span class="comments">/**</span><br />
-                <span class="space"/><span class="comments">* We are both XXX Unversity  business administration and programmers,</span><br />
-                <span class="space"/><span class="comments">* so I write some code to show my love to you.</span><br />
-                <span class="space"/><span class="comments">*/</span><br />
-                Boy i = <span class="keyword">new</span> Boy(<span class="string">"boyname"</span>);<br />
-                Girl u = <span class="keyword">new</span> Girl(<span class="string">"girlname"</span>);<br />
-                <span class="comments">// April 28, 2012, I told you I love you. </span><br />
+    <div id="mainDiv" class="container">
+        <div class="row">
+            <div id="code" class="col m6 offset-m3">
+                <span class="comments">/***</span><br />
+                <span class="space"/><span class="comments">* 2017年，我们相继毕业于宾州州立大学，我们都拿到了计算机科学的学位，</span><br />
+                <span class="space"/><span class="comments">* 我决定用代码来向你表达我们之间的爱情故事。</span><br />
+                <span class="space"/><span class="comments">***/</span><br />
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"隋昊君"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"李梦婕"</span>);<br />
+                <span class="comments">// 2016年10月13日，你去考GRE，那天我喝醉了大胆地对你说：“不要离开我好不好”。</span><br />
                 i.love(u);<br />
-                <span class="comments">// but..., what you said that meaning we are still good friends.</span><br />
-                u.sayOtherthing();<br />
-                <span class="comments">// Since then, I ask you for the reason.</span><br />
-                <span class="keyword">var</span> reason=i.ask(u);<br />
-                <span class="comments">// you say we were not understand enough for each other .</span><br />
-                $("body").append(reason);<br />
-                <span class="comments">// You say that it is too quickily to turn our relation of lover.</span><br />
-                <span class="comments">// And take care of u and our love.</span><br />
+                <span class="comments">// 2016年10月14日，我们看完电影，早上去吃waffle shop，你鼓起勇气告诉我你也爱我。</span><br />
+                u.love(i);<br />
+                <span class="comments">// 从那天起，我们有过许多开心的时光，也有过让彼此心痛的时光。</span><br />
+                <span class="keyword">var</span> [happy, heart_break]=u.liveWith(i);<br />
+                $("body").append([happy, heart_break]);<br />
+                <span class="comments">// 我对你的爱让你脸上挂满了笑容。</span><br />
                 i.takeCareOf(u);<br />
-                <span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
+                <span class="comments">// 对我太多太多无理的要求你也是宽容的忍受，但每一次地忍受我知道你一定也不好受。</span><br />
+                u.bearWith(i);<br />
+                <span class="comments">// 想让你开心幸福，我一直在改变着自己。</span><br />
+                <span class="keyword">var</span> things[]=u.happyWith();<br />
+                i.change(things);<br />
                 <span class="keyword">boolean</span> isAccept = <span class="keyword">false</span>;<br />
                 <span class="keyword">while</span> (isAccept) {<br />
                 <span class="placeholder"/>i.waitFor(u);<br />
@@ -44,39 +47,38 @@
                 <span class="placeholder"/><span class="comments">// and you should forgot the unhappy things that happended before.</span><br />
                 <span class="placeholder"/>isAccept = u.thinkOver();<br />
                 }<br />
-                <span class="comments">// After a please sound of accept, we will live happily ever after.</span><br />
+                <span class="comments">// 我们会一直幸福的生活下去。</span><br />
                 u.accept(i);<br />
-                i.liveHappilyWith(u);<br />
+                u.liveHappilyWith(i);<br />
             </div>
-            <div id="loveHeart">
+        </div>
+        <div id="content" class="row">
+            <div id="loveHeart" class="col s12">
                 <canvas id="garden"></canvas>
                 <div id="words">
                     <div id="messages">
 <center>
 </center>
-                        girlname, I will have fallen in love with you for
+                        亲爱的，这是我们相爱在一起的时光。
                         <div id="elapseClock" style="display:none"></div>
-                        <a href='#' id="accept">click me if accept me</a>
+                        <a href='#' id="accept">点我点我点我。</a>
                     </div>
                     <div id="loveu">
-                        Love u forever and ever.<br/>
-                        <div class="signature">- boyname</div>
+                        爱你直到永远。<br/>
+                        <div class="signature">- 隋昊君</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="copyright">
-            程序改编: <a href="http://www.crazyiter.com/">疯狂的IT人</a><br />
         </div>
     </div>
     <script type="text/javascript">
         var offsetX = $("#loveHeart").width() / 2;
         var offsetY = $("#loveHeart").height() / 2 - 55;
-        
+
         if (!document.createElement('canvas').getContext) {
             var msg = document.createElement("div");
             msg.id = "errorMsg";
-            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
             document.body.appendChild(msg);
             $("#code").css("display", "none")
             $("#copyright").css("position", "absolute");
@@ -86,12 +88,12 @@
             setTimeout(function () {
                 adjustWordsPosition();
                 startHeartAnimation();
-            }, 10000);
-            
+            }, 1);
+
             $("#accept").click(function(){
                 $(this).hide();
                 $("#elapseClock").show();
-                var together = new Date();
+                var together = new Date(2016,9,14);
                 timeElapse(together);
                 setInterval(function () {
                     timeElapse(together);
@@ -101,5 +103,6 @@
             $("#code").typewriter();
         }
     </script>
+    <embed src="bgsound.m4a" width="180" height="90" loop="true" autostart="true" hidden="true" />
 </body>
 </html>

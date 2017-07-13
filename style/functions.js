@@ -11,9 +11,10 @@ gardenCanvas.height=$("#loveHeart").height();
 gardenCtx=gardenCanvas.getContext("2d");
 gardenCtx.globalCompositeOperation="lighter";
 garden=new Garden(gardenCtx,gardenCanvas);
-$("#content").css("width",$loveHeart.width()+$("#code").width());
+//$("#content").css("width",$loveHeart.width()+$("#code").width());
 $("#content").css("height",Math.max($loveHeart.height(),$("#code").height()));
-$("#content").css("margin-top",Math.max(($window.height()-$("#content").height())/2,10));
+//$("#content").css("margin-top",Math.max(($window.height()-$("#content").height())/2,10));
+$("#content").css("margin-top",20);
 $("#content").css("margin-left",Math.max(($window.width()-$("#content").width())/2,10));
 setInterval(function(){garden.render()},Garden.options.growSpeed)});
 $(window).resize(
@@ -26,9 +27,10 @@ $(window).resize(
 	}
 );
 function getHeartPoint(c){
-	var b=c/Math.PI;var a=19.5*(16*Math.pow(Math.sin(b),3));
-	var d=-20*(13*Math.cos(b)-5*Math.cos(2*b)-2*Math.cos(3*b)-Math.cos(4*b));
-	return new Array(offsetX+a,offsetY+d)
+	var b = c / Math.PI;
+	var a = 19.5 * (16 * Math.pow(Math.sin(b), 3));
+	var d = -20 * (13 * Math.cos(b) - 5 * Math.cos(2 * b) - 2 * Math.cos(3 * b) - Math.cos(4 * b));
+	return new Array(offsetX + a, offsetY + d)
 }
 function startHeartAnimation(){
 	var c=50;
@@ -89,7 +91,7 @@ function timeElapse(c){
 	if(f<10){
 		f="0"+f
 	}
-	var a='<span class="digit">'+g+'</span> days <span class="digit">'+b+'</span> hours <span class="digit">'+d+'</span> minutes <span class="digit">'+f+"</span> seconds";
+	var a='<span class="digit">'+g+'</span> 天 <span class="digit">'+b+'</span> 小时 <span class="digit">'+d+'</span> 分钟 <span class="digit">'+f+"</span> 秒";
 	$("#elapseClock").html(a)
 }
 function showMessages(){
