@@ -74,7 +74,7 @@ function startHeartAnimation(){
 				}
 				d.html(c.substring(0,b)+(b&1?"_":""));
 				if(b>=c.length){
-					clearInterval(e)}},10)
+					clearInterval(e)}},60)
 				});
 		return this
 	}
