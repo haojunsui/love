@@ -19,19 +19,11 @@
 </head>
 
 <body>
-    <script>
-        // <audio src="bgsound.m4a" autoplay>
-        //     <p>If you are reading this, it is because your browser does not support the audio element.</p>
-        // </audio>
-        var mp3 = document.createElement("audio");
-        mp3.setAttribute('src', 'bgsound.m4a');
-        mp3.load();
-        document.documentElement.appendChild(mp3);
-        mp3.play();
-    </script>
     <div id="mainDiv" class="container">
-        <div class="header row" style="height:300px">
-
+        <div class="header row" style="height:300px;text-align:center">
+            <audio src="bgsound.m4a" autoplay loop controls style="width:60%">
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </audio>
         </div>
         <div class="row">
             <div class="col m8 offset-m2" id="code">
